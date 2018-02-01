@@ -7,9 +7,9 @@
  * Flag types supported.
  */
 typedef enum {
-	FLAG_TYPE_INT,
-	FLAG_TYPE_BOOL,
-	FLAG_TYPE_STRING,
+        FLAG_TYPE_INT,
+        FLAG_TYPE_BOOL,
+        FLAG_TYPE_STRING,
 } FlagType;
 
 /*
@@ -18,12 +18,12 @@ typedef enum {
  * and pointer to the value.
  */
 typedef struct Flag {
-	const char *name;
-	const char *help;
-	FlagType type;
-	union {
-		bool *b;
-		int *i;
-		const char **s;
-	} value;
+        const char *name;
+        const char *help;
+        FlagType type;
+        union {
+                bool *b;
+                int *i;
+                const char **s;
+        } value;
 } Flag;

@@ -1,5 +1,5 @@
 .PHONY: fmt
 
 fmt:
-	clang-format -style=file -i $(wildcard *.c) $(wildcard *.h)
+	@clang-format -style=file -i $(wildcard *.c) $(wildcard *.h)
 
