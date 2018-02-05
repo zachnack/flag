@@ -11,16 +11,8 @@ static struct {
         int argc;
         const char *argv[FLAG_MAX_ARGS];
         const char *usage;
-        const char *version;
         int nflags;
         Flag flags[FLAG_MAX];
+	int nsize;	/* size of largest flag in bytes */
 } flagset;
 
-/*
- * Initialize a new flag library.
- */
-void flag_init(const char *usage, const char *version)
-{
-        flagset.usage = usage;
-        flagset.version = version;
-}
