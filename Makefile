@@ -1,5 +1,7 @@
 .PHONY: all fmt clean
 
+CFLAGS = -std=c99 -Wall -Werror -Wextra -g
+
 SRC = flag.c
 OBJ = ${SRC:.c=.o}
 
