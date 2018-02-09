@@ -1,4 +1,13 @@
 
+/* maxium number of flags. */
+#define FLAG_MAX 128
+
+/* maxium number of args. */
+#define FLAG_MAX_ARGS 128
+
+/* size of error message. */
+#define FLAG_ERR_MSG_SIZE 2048
+
 /*
  * FlagType are an enum of the support types of flags.
  */
