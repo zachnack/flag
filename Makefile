@@ -14,5 +14,5 @@ fmt:
 	@clang-format -style=file -i $(wildcard *.c) $(wildcard *.h)
 
 clean:
-	@rm ${OBJ}
+	@rm -f ${OBJ} $(wildcard *.out)
 
